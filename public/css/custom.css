@@ -1,0 +1,302 @@
+
+/** ADD YOUR AWESOME CODES HERE **/
+
+/* Enhanced Navbar Dropdown Styles */
+.navbar .dropdown-menu {
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    padding: 8px 0;
+    margin-top: 8px;
+    min-width: 180px;
+    background-color: #fff;
+    animation: fadeInDown 0.3s ease-in-out;
+}
+
+.navbar .dropdown-item {
+    padding: 10px 20px;
+    color: #333;
+    font-size: 14px;
+    transition: all 0.2s ease;
+    border: none;
+    background: none;
+}
+
+.navbar .dropdown-item:hover {
+    background-color: #f8f9fa;
+    color: #FFC107;
+    padding-left: 25px;
+}
+
+.navbar .dropdown-item i {
+    margin-right: 8px;
+    width: 16px;
+    text-align: center;
+}
+
+.navbar .dropdown-divider {
+    margin: 8px 0;
+    border-color: #e9ecef;
+}
+
+/* User Dropdown Button Enhancement */
+.hover-btn-new.dropdown-toggle::after {
+    margin-left: 8px;
+    vertical-align: middle;
+}
+
+/* Courses Dropdown Enhancement */
+#coursesDropdown {
+    position: relative;
+}
+
+#coursesDropdown::after {
+    margin-left: 5px;
+}
+
+/* Animation for dropdown */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive dropdown adjustments */
+@media (max-width: 991px) {
+    .navbar .dropdown-menu {
+        position: static;
+        float: none;
+        width: auto;
+        margin-top: 0;
+        background-color: transparent;
+        border: 0;
+        box-shadow: none;
+        padding: 0;
+    }
+    
+    .navbar .dropdown-item {
+        padding: 8px 15px;
+        color: #333;
+    }
+    
+    .navbar .dropdown-item:hover {
+        background-color: rgba(255, 193, 7, 0.1);
+        padding-left: 15px;
+    }
+}
+
+
+
+.scholarship-card {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    background-color: #fff;
+    color: #333;
+    transition: transform 0.2s ease-in-out, box-shadow 0.3s ease-in-out;
+    border: 1px solid #e8e8e8;
+}
+
+.scholarship-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.scholarship-card-header {
+    background-color: #FFC107; /* لون أصفر مشابه */
+    color: #333; /* لون داكن للنص */
+    padding: 15px;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.scholarship-card-body {
+    padding: 20px;
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+.scholarship-card-body p {
+    margin-bottom: 12px;
+}
+
+.scholarship-card-footer {
+    padding: 15px;
+    background-color: #fff8e1; /* خلفية فاتحة باللون الأصفر */
+    border-top: 1px solid #ffe082; /* لون حدود خفيف */
+    text-align: center;
+}
+
+.scholarship-apply-btn,
+.scholarship-login-btn {
+    display: inline-block;
+    border-radius: 25px;
+    padding: 10px 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-decoration: none;
+    text-align: center;
+}
+
+.scholarship-apply-btn {
+    background-color: #FFC107; /* زر بلون أصفر */
+    color: #333; /* لون النص */
+}
+
+.scholarship-apply-btn:hover {
+    background-color: #ffb300; /* لون أغمق قليلًا عند التمرير */
+    transform: scale(1.05);
+}
+
+.scholarship-login-btn {
+    background-color: #FFD54F; /* لون زر مختلف قليلاً */
+    color: #333;
+}
+
+.scholarship-login-btn:hover {
+    background-color: #FFC107; /* لون أغمق قليلاً */
+    transform: scale(1.05);
+}
+
+
+/* أسلوب الحاوية العامة للمحادثة */
+/* أسلوب الحاوية العامة للمحادثة */
+/* الحاوية الرئيسية */
+.chat-container {
+    width: 360px;
+    height: 600px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    margin: 20px auto; /* المركزية */
+}
+
+/* الحاوية التي تحتوي على الرسائل */
+.messages-container {
+    flex-grow: 1;
+    padding: 15px;
+    overflow-y: auto;
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+}
+
+/* الحاوية لكل رسالة */
+.message-container {
+    margin-bottom: 10px;
+}
+
+/* الرسالة */
+.message {
+    padding: 10px;
+    border-radius: 15px;
+    font-size: 14px;
+    line-height: 1.4;
+    max-width: 70%;
+    word-wrap: break-word;
+    position: relative;
+}
+
+/* الرسائل الخاصة بالدعم */
+.support-message {
+    background-color: #d0f0ff;
+    align-self: flex-end;
+    text-align: right;
+     margin-left: auto; /* إضافة مسافة فارغة تلقائية على اليسار */
+    margin-right: 0px; /* مسافة بسيطة على اليمين */
+}
+
+/* الرسائل الخاصة بالطالب */
+.student-message {
+    background-color: #e1ffc7;
+    align-self: flex-start;
+    text-align: left;
+}
+
+/* الوقت */
+.message small {
+    display: block;
+    font-size: 10px;
+    color: #666;
+    margin-top: 5px;
+}
+
+/* إدخال الرسالة */
+.message-input {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    background-color: #fff;
+}
+
+/* حقل النص */
+.message-input textarea {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    resize: none;
+    font-size: 14px;
+    outline: none;
+    margin-right: 10px;
+}
+
+/* زر الإرسال */
+.message-input button {
+    background-color: #0078ff;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.message-input button:hover {
+    background-color: #005fcc;
+}
+
+/* التمرير عند وجود رسائل كثيرة */
+.messages-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.messages-container::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 10px;
+}
+
+.messages-container::-webkit-scrollbar-thumb:hover {
+    background-color: #aaa;
+}
+
+
+.alert {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+/* اشعار خطا*/
+.alert-danger {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+}
