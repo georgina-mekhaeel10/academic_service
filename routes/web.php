@@ -218,7 +218,6 @@ Route::get('/admin/students/Block', [StudentController::class, 'blockPage'])->na
 // Student Course Routes
 use App\Http\Controllers\StudentCourseController;
 // Student Courses Routes - Protected by auth:student middleware
-Route::middleware(['auth:student'])->group(function () {
     Route::get('/courses', [StudentCourseController::class, 'index'])->name('student.courses.index');
     // الروتات المحددة يجب أن تأتي قبل الروت العام {id}
     Route::get('/courses/favorites', [StudentCourseController::class, 'favorites'])->name('student.courses.favorites');
@@ -232,7 +231,6 @@ Route::middleware(['auth:student'])->group(function () {
     Route::post('/courses/{id}/toggle-favorite', [StudentCourseController::class, 'toggleFavorite'])->name('student.courses.favorites.toggle');
     Route::delete('/courses/favorites/clear', [StudentCourseController::class, 'clearFavorites'])->name('student.courses.favorites.clear');
     Route::delete('/courses/applications/{id}/withdraw', [StudentCourseController::class, 'withdrawApplication'])->name('student.courses.applications.withdraw');
-});
 
 // Student Favorites Routes
 use App\Http\Controllers\FavoriteController;
