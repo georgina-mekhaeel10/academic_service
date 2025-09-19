@@ -206,11 +206,11 @@
 							<a class="nav-link" href="{{ route('paidprograms.index') }}" id="paidProgramsDropdown">
 								Paid Programs
 							</a>
-							<div class="dropdown-menu" aria-labelledby="paidProgramsDropdown">
+							<!-- <div class="dropdown-menu" aria-labelledby="paidProgramsDropdown">
 									<a class="dropdown-item" href="{{ route('student.requested.paidprograms') }}">
 										<i class="fa fa-credit-card"></i> Requested Paid Programs
 									</a>
-							</div>
+							</div> -->
 						</li>
 						@else
 						<li class="nav-item dropdown">
@@ -224,11 +224,11 @@
 							<a class="nav-link" href="{{ route('scholarships.index') }}" id="scholarshipsDropdown">
 								Scholarships
 							</a>
-							<div class="dropdown-menu" aria-labelledby="scholarshipsDropdown">
+							<!-- <div class="dropdown-menu" aria-labelledby="scholarshipsDropdown">
 									<a class="dropdown-item" href="{{ route('student.requested.scholarships') }}">
 										<i class="fa fa-graduation-cap"></i> Requested Scholarships
 									</a>
-							</div>
+							</div> -->
 						</li>
 						@else
 						<li class="nav-item dropdown">

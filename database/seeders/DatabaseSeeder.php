@@ -14,8 +14,9 @@ class DatabaseSeeder extends Seeder
             AdminSeeder::class,
             UniversitiesSeeder::class,
             ScholarshipsSeeder::class,
-            PaidprogramsSeeder::class
-                ]);
+            PaidprogramsSeeder::class,
+            StudentSeeder::class,
+        ]);
 
     }
 }

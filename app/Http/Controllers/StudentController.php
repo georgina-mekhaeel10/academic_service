@@ -159,37 +159,6 @@ class StudentController extends Controller
         ]);
     }
 
-    // عرض الطلبات المقدمة للمنح
-    public function requestedScholarships()
-    {
-        if (!Auth::guard('student')->check()) {
-            return redirect()->route('students.login');
-        }
-        
-        $student = Auth::guard('student')->user();
-        $scholarships = RequestScholarship::where('student_id', $student->id)
-            ->with('scholarship')
-            ->orderBy('created_at', 'desc')
-            ->get();
-        
-        return view('student.requested-scholarships', compact('scholarships'));
-    }
-
-    // عرض الطلبات المقدمة للبرامج المدفوعة
-    public function requestedPaidPrograms()
-    {
-        if (!Auth::guard('student')->check()) {
-            return redirect()->route('students.login');
-        }
-        
-        $student = Auth::guard('student')->user();
-        $paidPrograms = RequestPaidProgram::where('student_id', $student->id)
-            ->with('paidProgram')
-            ->orderBy('created_at', 'desc')
-            ->get();
-        
-        return view('student.requested-paid-programs', compact('paidPrograms'));
-    }
 
     public function show($id)
     {
