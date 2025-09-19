@@ -69,19 +69,19 @@
     </div>
     
     <!-- Left Control -->
-<!-- Left Control -->
-<a class="new-effect carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-  <span class="fa fa-angle-left" aria-hidden="true"></span>
-  <span class="sr-only">Previous Slide</span>
-</a>
+  <!-- Left Control -->
+  <a class="new-effect carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="fa fa-angle-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous Slide</span>
+  </a>
 
-<!-- Right Control -->
-<a class="new-effect carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-  <span class="fa fa-angle-right" aria-hidden="true"></span>
-  <span class="sr-only">Next Slide</span>
-</a>
+  <!-- Right Control -->
+  <a class="new-effect carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="fa fa-angle-right" aria-hidden="true"></span>
+    <span class="sr-only">Next Slide</span>
+  </a>
 
-  </div>
+    </div>
 </div>
 <!-- Search Section -->
 <section id="search-section" class="search-section py-5" style="background-color: #f7f9fc;">
@@ -186,7 +186,7 @@
 </div><!-- end section -->
 
 
-  <section class="section lb page-section">
+<section class="section lb page-section">
     <div class="container">
       <div class="section-title row text-center">
         <div class="col-md-8 offset-md-2">

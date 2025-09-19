@@ -18,7 +18,7 @@ class StudentController extends Controller
     }
     public function view()
     { 
-        return redirect()->back()->with('success', 'Registration successful. Please login.');
+        return redirect()->back();
 
     }
     public function blockPage()
@@ -54,7 +54,7 @@ class StudentController extends Controller
 
         // إعادة التوجيه مع رسالة نجاح
         
-        return redirect()->back()->with('success', 'Registration successful. Please login.');
+        return redirect()->back()->with('success');
     }
       // حذف طالب
       public function destroy($id)
